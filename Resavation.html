@@ -1,0 +1,184 @@
+<!DOCTYPE.HTML>
+<html>
+<head>
+  <title>Hotel GTV - Reservations</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/bootstrap.css">
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <style>
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+	  background-color: #4d0000;
+    }
+    
+    .row.content {height: 500px}
+    
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    #footer{
+	margin-left: 0;
+	margin-right: 0;
+	height: 210px;
+	width: 100%;
+	background-color: #4d0000;
+	}
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+	a{
+		color: white;
+		text-decoration: none;
+		font-size: 15px;
+		font-weight: bold;
+	}
+	a:hover{
+		color: #ff8080;
+		text-decoration: underline;
+	}
+
+  </style>
+
+</head>
+
+<body style="background-image: url(img/pic31.jpg);">
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav" id="header">
+				<li><a href = "file:///C:/Users/Asus/Desktop/IIT-19-032/Hotel%20GTV.html"><lable for="HOME" class="tag">HOME</lable></a></li>
+				<li><a href = "file:///C:/Users/Asus/Desktop/IIT-19-032/Menu.html"><lable for="MENU" class="tag">MENU</lable></a></li>
+				<li><a href = "file:///C:/Users/Asus/Desktop/IIT-19-032/Functons.html"><lable for="function" class="tag">FUNCTIONS</lable></a></li>
+				<li><a href = "file:///C:/Users/Asus/Desktop/IIT-19-032/Rooms.html"><lable for="ROOOMS" class="tag">ROOMS</lable></a></li>
+				<li><a href = "file:///C:/Users/Asus/Desktop/IIT-19-032/Gallery.html"><lable for="GALLERY" class="tag">GALLERY</lable></a></li>
+				<li class="active"><a href = "file:///C:/Users/Asus/Desktop/IIT-19-032/Resavation.html"><lable for="RESAVATION" class="tag">RESERVATIONS</lable></a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<a href="Home"></a><img src = "img/logo.PNG" width="60" height="65" alt="logo"class="img"></a>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container-fluid text-center">    
+	<div class="row content">
+		<div class="col-sm-5 sidenav" style="background-image: url(img/pic30.jpg);">
+			<h1 style="color:maroon; font-family:Bernard MT Condensed;"> Reservations </h1>
+			<p style="color:maroon; font-family:Bernard MT Condensed;"> Lorem ipsum carrots </p>
+		</div>
+		<div class="col-sm-7 text-left">
+		<h2 style="font-family:Harlow Solid Italic;">Form</h2>
+		<form>
+			<div class="row mb-3">
+				<label for="inputEmail3" class="col-sm-2 col-form-label"> Your Name:-</label> <br>
+				<div class="col-sm-10">
+				<input type="text" class="form-control" placeholder="Full name" id="First name" required>
+				</div>
+			</div>
+			<div class="row mb-3">
+				<label for="inputPassword3" class="col-sm-2 col-form-label"> Contact:-</label><br>
+				<div class="col-sm-10">
+				<input type="contact" class="form-control" placeholder="(+94) 000 000 000" id="contact">
+				</div>
+			</div>
+			<div class="row mb-3">
+				<label for="inputPassword3" class="col-sm-2 col-form-label"> Your Email:-</label><br>
+				<div class="col-sm-10">
+				<input type="email" class="form-control" placeholder="Your Email" id="Email">
+				</div>
+			</div>
+			<div class="row mb-3">
+				<label for="inputPassword3" class="col-sm-2 col-form-label"> Date:-</label><br>
+				<div class="col-sm-10">
+				<input type="date" class="form-control" placeholder="18/01/2021" id="date">
+				</div>
+			</div>
+			<div class="row mb-3">
+				<label for="inputPassword3" class="col-sm-2 col-form-label"> Inter Service:-</label><br>
+				<div class="col-sm-10">
+				<input type="text" class="form-control" placeholder="Wedding / Function / Meeting/ Rooms" id="Service">
+				</div>
+			</div>
+			<div class="row mb-3">
+				<label for="inputPassword3" class="col-sm-2 col-form-label"> Your Booking Detail:-</label><br>
+				<div class="col-sm-10">
+				<input type="textarea" class="form-control" id="Email">
+				</div>
+			</div>
+		<br>
+			<div class="row mb-3">
+				<div class="col-sm-10 offset-sm-2">
+					<div class="form-check">
+					<input class="form-check-input" type="checkbox" id="gridCheck1">
+					<label class="form-check-label" for="gridCheck1"> I'm sure all the Details are correct </label>
+					</div>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary" onclick="myFunction()">Submit</button> <button type="clear" class="btn btn-primary">Clear</button>
+		</form> 
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+		<div style="width:25%;float:left;color:white; font-size:20px;">
+			<p><b>Visit us:-</b><br>		
+			<address><em>
+			Hotel GTV,<br>
+			3<sup>rd</sup> Ranketha street,<br>
+			Colombo 05.<br></em>
+			</address> </p>
+			</div>
+			<div style="width:25%;float:left; color:white; font-size:20px;">
+			<p><b>Contact us:-</b><br>
+			<em>(+94)11 27845369<br>
+			(+94)11 29865147 <br>
+			(+94)11 26532852</em></p>
+			</div>
+			<div style="width:25%;float:left; color:white; font-size:20px;">
+			<p><b>Hot Line:-</b><br>
+			(+94) 77 1963971<br>
+			(+94) 71 5754513<br>
+			(+94) 75 3694761</p>
+			</div>
+			<div style="width:25%;float:right;color:white; font-size:20px;">
+					<p>
+					Email:<a href="mailto:mobicom@mobi.com">hotelgtv@gtv.com </a><br>
+					<a href="#1"><span class="fa fa-facebook"> </span>Hotel GTV.facebook.com</a> <br/>
+					<a href="#2"><span class="fa fa-instagram"> </span>Hotel GTV.instagram.com</a> <br/>
+					<a href="#3"><span class="fa fa-twitter"></span>Hotel GTV.Twitter.com</a></p>
+				</div>
+			<hr width="100%">
+			<marquee behavior="alternate"<p style="color:white; font-siz: 2px; font-weight:bold;" align="left"><em> ©Hotel GTV - Colombo </em></p></marquee>
+	
+	</div>
+	
+	<script>
+		function myFunction() {
+			alert("Thank You! Your details are submited successfully!");
+		}
+	</script>
+	
+</body>
+
+</html>
